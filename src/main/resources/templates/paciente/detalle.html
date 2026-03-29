@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle del Paciente</title>
+</head>
+<body>
+<h2>Detalle del paciente</h2>
+
+<p><strong>ID:</strong> <span th:text="${paciente.id}"></span></p>
+<p><strong>Nombre:</strong> <span th:text="${paciente.nombre}"></span></p>
+<p><strong>DNI:</strong> <span th:text="${paciente.dni}"></span></p>
+<p><strong>Diagnóstico:</strong> <span th:text="${paciente.diagnostico}"></span></p>
+
+<a th:href="@{/pacientes/nuevo}">Registrar otro paciente</a>
+</body>
+</html>
